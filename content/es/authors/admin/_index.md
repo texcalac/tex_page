@@ -33,7 +33,7 @@ social:
   link: https://twitter.com/texcalac
 - icon: github
   icon_pack: fab
-  link: https://texcalac.github.io/erreando/
+  link: https://github.com/texcalac
 - icon: google-scholar
   icon_pack: ai
   link: https://scholar.google.com/citations?user=L2Q2fI4AAAAJ
