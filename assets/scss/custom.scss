@@ -1,0 +1,129 @@
+/* Encabezado, animar línea al colocar cursor sobre texto */
+.navbar {
+  background-color: white; 
+  font-size: 16px;
+  /*  background: $sta-menu-primary; */
+    /* this is the part that takes out the shadow & the only edit */
+    box-shadow: none;
+}
+
+/* Make mobile navbar skinnier */
+  
+  @media screen and (max-width: 768px) {
+    body {
+      margin-top: 100px !important;
+    }
+    .navbar {
+      min-height: 100px !important;
+    }
+  }
+
+/*make drop down menu more opaque on mobile */
+  
+  @media (max-width: 991.98px) { 
+    .navbar-collapse {
+      background-color: #f7f7f7d9 !important;
+    }
+  }
+
+/*----NAV LINK HOVER ANIMATION -----*/
+  
+  .nav-link:hover {
+    color: black !important;
+  }
+
+
+/* stroke */
+  
+  a.nav-link,
+a.nav-link:after,
+a.nav-link:before {
+  transition: all .5s;
+}
+
+a.nav-link {
+  position: relative;
+}
+
+a.nav-link:after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 0%;
+  content: '.'; /* make invisible, dot beneath links */
+    color: transparent;
+  background: #999999;
+    height: 2px;
+}
+
+a.nav-link:hover:after {
+  width: 70%;
+}
+
+
+/* SEECIÓN ABOUT */
+
+/* Cambio color a H1 y H2 */
+h1, h2 {
+    color: #2874A6;
+      font-size: 35px;
+    font-family: Poppins;
+  }
+
+/* Cambio color nombre */
+.portrait-title h2 {
+  color: #2874A6;
+}
+
+/* sección: Home - color del texto */
+  #about p {
+  color: #34495E;
+  }
+
+/* cambia texto encabezado intereses y educación */
+.section-subheading {
+  color: #2874A6;
+  font-weight: normal;
+}
+
+/* Cambia texto bio "Medical Science Researcher" */
+#about h3 {
+  color: #5D6D7E;
+}
+
+/* Cambia texto de sección intereses */
+ul.ul-interests li {
+  color: #34495E;
+}
+
+/* cambia color en nombre de grado */
+#about ul.ul-edu li .description p.course {
+    color: #34495E;
+}
+
+/* cambia color de escuela del grado */
+#about ul.ul-edu li .description p.institution {
+    color: #5D6D7E;
+}
+
+/* color de birrete */
+ul.ul-edu {
+    color: #2874A6;
+}
+
+/* sección: Blog - color del texto */
+  .article-container h3 {
+    color: #2874A6;
+      font-weight: normal;
+  }
+
+.article-container {
+  color: #34495E;
+}
+
+
+
+
+

@@ -1,0 +1,15 @@
+# Font style metadata
+name = "tex_fonts"
+
+# Optional Google font URL
+google_fonts = "Poppins:400,600,700|Ubuntu+Mono|Red+Hat+Display:400,600,700"
+
+# Font families
+heading_font = "Red Hat Display"
+body_font = "Poppins"
+nav_font = "Red Hat Display"
+mono_font = "Ubuntu+Mono"
+
+# Font size
+font_size = "12"
+font_size_small = "15"

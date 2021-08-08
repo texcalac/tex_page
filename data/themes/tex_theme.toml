@@ -1,0 +1,28 @@
+# Theme metadata
+name = "tex_theme"
+
+# Is theme light or dark?
+light = true
+
+# Primary
+primary = "#F7F7F7"
+
+# Menu
+menu_primary = "#F7F7F7"
+# color de texto de menú cuando no está activo
+menu_text = "#34495E"
+# color de texto del menu activo
+menu_text_active = "#EF476F"
+menu_title = "#2B2B2B"
+
+# Home sections
+background = "#FFFFFF"
+# Color de sección impar
+home_section_odd = "#FFFFFF"
+# Color d sección par
+home_section_even = "#FFFFFF"
+
+# color de iconos de github, twitter, de cualquier liga
+link = "#5D6D7E"
+# color al poner el cursor sobre una liga
+link_hover = "#0889D2"

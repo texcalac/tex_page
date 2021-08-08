@@ -5,10 +5,10 @@
 
 # Appearance
 
-theme: minimal
+theme: tex_theme
 day_night: true
-font: ''
-font_size: L
+font: tex_fonts
+font_size: M
 
 # SEO
 
@@ -20,46 +20,46 @@ twitter: ''
 
 # Contact (edit or remove options as required)
 
-email: test@example.org
-phone: 888 888 88 88
+email: jtexcalac@insp.mx
+phone: +52 777 3293000
 address:
-  street: 450 Serra Mall
-  city: Stanford
-  region: CA
-  postcode: '94305'
-  country: United States
-  country_code: US
+  street: 7a. Cerrada de Fray Pedro de Gante 50. Col. Sección XVI
+  city: Tlalpan
+  region: CDMX
+  postcode: '14080'
+  country: México
+  country_code: MX
 coordinates:
-  latitude: '37.4275'
-  longitude: '-122.1697'
-directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
-office_hours:
-  - 'Monday 10:00 to 13:00'
-  - 'Wednesday 09:00 to 10:00'
-appointment_url: 'https://calendly.com'
+  latitude: '19.2918'
+  longitude: '-99.15619'
+# directions: Enter Building 1 and take the stairs to Office 200 on Floor 2
+# office_hours:
+  # - 'Monday 10:00 to 13:00'
+  # - 'Wednesday 09:00 to 10:00'
+# appointment_url: 'https://calendly.com'
 contact_links:
   - icon: twitter
     icon_pack: fab
-    name: DM Me
-    link: 'https://twitter.com/Twitter'
-  - icon: skype
-    icon_pack: fab
-    name: Skype Me
-    link: 'skype:echo123?call'
-  - icon: keybase
-    icon_pack: fab
-    name: Chat on Keybase
-    link: 'https://keybase.io/'
-  - icon: comments
-    icon_pack: fas
-    name: Discuss on Forum
-    link: 'https://discourse.gohugo.io'
+    name: Contáctame en Twitter
+    link: 'https://twitter.com/texcalac'
+  # - icon: skype
+    # icon_pack: fab
+    # name: Skype Me
+    # link: 'skype:echo123?call'
+  # - icon: keybase
+    # icon_pack: fab
+    # name: Chat on Keybase
+    # link: 'https://keybase.io/'
+  # - icon: comments
+    # icon_pack: fas
+    # name: Discuss on Forum
+    # link: 'https://discourse.gohugo.io'
 
 # Site header
 
 main_menu:
   enable: true
-  align: l
+  align: r
   show_logo: true
   show_language: false
   show_day_night: true
@@ -74,6 +74,7 @@ address_format: en-us
 
 # Site features
 
+highlight_superuser: true
 highlight: true
 highlight_languages:
   - r
@@ -157,4 +158,4 @@ cms:
   local_backend: false
 icon:
   pack:
-    ai: false
+    ai: true
