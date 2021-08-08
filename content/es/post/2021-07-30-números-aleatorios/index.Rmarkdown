@@ -1,0 +1,78 @@
+---
+title: Números aleatorios
+author: José Luis Texcalac Sangrador
+date: '2021-07-30'
+slug: números-aleatorios
+categories: []
+tags: []
+subtitle: ''
+summary: ''
+authors: []
+lastmod: '2021-07-30T01:50:12-05:00'
+featured: no
+image:
+  caption: ''
+  focal_point: ''
+  preview_only: no
+projects: []
+---
+
+Una de las funciones posibles en R es la generación de números aleatorios, los resultados pueden concatenarse y almacenarse en forma de vector.
+
+### Números aleatorios enteros
+
+El comando **`sample`** nos permite seleccionar/generar números aleatorios enteros.
+
+```{r aleatorios, class.output="Rout"}
+aleatorios <- sample(25:40, 25, replace = T)
+```
+
+El primer argumento es un vector de números válidos a partir de los cuáles se generarán los valores aleatorios, en este caso van de 25 a 40. El segundo argumento indica el número de valores aleatorios a generar, que para este ejemplo serán 25 números aleatorios. El tercer argumento `replace = T` indica que cada valor aleatorio puede tener duplicados. Finalmente el resultado es guardado en el objeto de nombre `aleatorios`.
+
+Revisamos el resultado
+
+```{r}
+aleatorios
+```
+
+### Generación aleatoria de valores de tipo carácter
+
+También es posible seleccionar y/o generar valores aleatorios de tipo carácter, para ello necesitamos en el primer argumento un vector con datos válidos a seleccionar, como segundo argumento el total de valores a generar y definir si se permiten duplicados. 
+
+```{r}
+aleat_txt <- 
+  sample(c("pera", "manzana", "guayaba", "papaya", "mango"), 25, replace = TRUE)
+  aleat_txt
+```
+
+### Números aleatorios con decimales
+
+El comando **`runif`** nos permite generar números aleatorios a partir de la distribución uniforme. Aquí un ejemplo para generar 25 números aleatorios entre 12.7 y 24.6
+
+```{r}
+aleat_unif <- runif(25, 12.7, 24.6)
+aleat_unif
+```
+
+Para redondear los resultados debemos agregar el comando `round` y especificar el redondeo a 1 dígito
+
+```{r}
+aleat_unif <- round(runif(25, 12.7, 24.6), 1)
+aleat_unif
+```
+
+El comando **`rnorm`** nos permite generar números aleatorios a partir de la distribución normal. Aquí un ejemplo para generar 25 números aleatorios con media 24.7 y desviación estándar de 4.3
+
+```{r}
+aleat_rnorm <- rnorm(25, 24.7, 4.3)
+aleat_rnorm
+```
+
+Para redondear podemos utilizar nuevamente el comando `round`
+
+```{r}
+aleat_rnorm <- round(rnorm(25, 24.7, 4.3), 1)
+aleat_rnorm
+```
+
+
