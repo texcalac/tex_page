@@ -14,7 +14,7 @@ main:
     url: post/
     weight: 30
   - name: Proyectos
-    url: project/
+    url: '#projects'
     weight: 40
   - name: Docencia
     url: '#teaching'
